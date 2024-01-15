@@ -27,7 +27,7 @@ when we run the `create-react-app` it uses `webpack and babel` as bundler- behin
 `caret(^)` in package.json will automatically upgrade the minor versions for eg: ^2.8.3 to 2.8.5
 `tilde(~)` in package.json will automatically upgrade the major versions for eg: ^2.8.3 to 3.8.5
 
-if u want to maintain exact version remove the caret or tilda;
+if u want to maintain exact version remove the caret or tilde;
 
 Always safe to use `caret(^)` instead of `tilde(~)` because when packages are upgraded to major version means the application can break due to major changes in package...
 
@@ -44,3 +44,18 @@ Always safe to use `caret(^)` instead of `tilde(~)` because when packages are up
 `node_modules` is a databases which contains all the npm packages which we installed
 
 `transitive dependency` is inderiect dependency for eg- our project need parcel as dev dependenecy but parcel itself is a project which has package.json need other dependenec and goes on...
+
+# what is npx?
+
+`NPX` is a `package executer`, and it is used to execute javascript packages directly, without installing them.
+
+# why CDN links are not preferred way to bring package in our application?
+
+it is costly operation of hitting network request.
+have to update the links whenever the package is upgraded.
+
+# Browser scripts cannot have imports or exports, why this error is throwing?
+
+normal script tag dosent supports the import or exports it only knows the javascript files, so we have to tell the script tag this app.js is not a normal browser file it is module.
+
+add the attribute `type=module` to the script tag... so script tag understands the file is module

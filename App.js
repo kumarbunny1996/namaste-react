@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom";
+
 // creates the react element returns the object
 const heading = React.createElement(
   "h1", //tag
