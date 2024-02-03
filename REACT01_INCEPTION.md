@@ -14,7 +14,7 @@ browser doesnt know the react code
 
 most expensive operation in browser is dom manipulation based on user interaction
 
-`React.createElement()` gives react object not htm element which the react render method converts the react object to the html which browser understands
+`React.createElement()` gives react object not html element which the react render method converts the react object to the html which browser understands
 
 React is a `library` not a framework which can used for specific code minimal javascript code
 React can used in existing app also by injecting cdn links

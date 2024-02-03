@@ -20,7 +20,7 @@ npm is not a node package manager and does not have a `fullform`
 
 `webpack`, `vite` and `parcel` are the bundlers used in many applications
 
-when we run the `create-react-app` it uses `webpack and babel` as bundler- behind the scenes
+when we run the `create-react-app` it uses `webpack and babel` as bundler and compiler- behind the scenes
 
 # What's the difference between tilde(~) and caret(^) in package.json?
 
